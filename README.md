@@ -7,18 +7,18 @@
 git clone https://github.com/kenetpicado/composable-generator.git
 ```
 
-- Inside composable-generator folder
+- Install dependencies
 
 ```shell
 npm install
 ```
 
-and
+- Run local server
 ```
 npm run dev
 ```
 
-### Build for production
+- Build for production
 ```
 npm run build
 ```
