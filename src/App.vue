@@ -72,7 +72,7 @@ export function ${useName.value}() {
     async function add${capitalizeModel.value}(data) {
         try {
             await axios.post("${pluralModelName.value}", data);
-            // On successful action
+            get${capitalizePluralModel.value}()
         } catch (error) {
             console.log(error.message);
         }
@@ -81,7 +81,7 @@ export function ${useName.value}() {
     async function update${capitalizeModel.value}(data, id) {
         try {
             await axios.put("${pluralModelName.value}/" + id, data);
-            // On successful action
+            get${capitalizePluralModel.value}()
         } catch (error) {
             console.log(error.message);
         }
@@ -90,7 +90,7 @@ export function ${useName.value}() {
     async function delete${capitalizeModel.value}(id) {
         try {
             await axios.delete("${pluralModelName.value}/" + id);
-            // On successful action
+            get${capitalizePluralModel.value}()
         } catch (error) {
             console.log(error.message);
         }
